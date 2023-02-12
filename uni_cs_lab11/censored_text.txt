@@ -1,0 +1,3 @@
+These are some example, bad words for our "raw_text.txt" file example. Let's talk about sex, or drugs.
+I don't know which one we should talk about first. I believe Python is a bad word in and of itself.
+You stupid son of a *****. Fuck you!
