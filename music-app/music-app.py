@@ -27,9 +27,7 @@ def main():
                 [i.strip() for i in line
                  if i != line[0]]
 
-    # u_name, n_songs = user_input("Mo Harchegani, 12 songs")
-    # u_name, n_songs = user_input(input("User name and surname, number of songs: "))
-    # assert u_name not in users, "Fuck you"
+    u_name, n_songs = user_input(input("User name and surname, number of songs: "))
 
     output_genre1 = list()
     output_genre2 = list()
