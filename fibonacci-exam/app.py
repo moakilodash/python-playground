@@ -8,8 +8,10 @@ def fib(num, mem):
   mem[num] = result
   return result
 
+
+
 def main():
-  amount = 5
+  amount = 100
   mem = ['' for _ in range(amount)]
   file_name = "./correct.txt"
   # file_name = "./wrong.txt"
@@ -19,21 +21,16 @@ def main():
   with open(file_name) as f:
     line = f.readline().strip().split(", ")
     seq = [int(i) for i in line]
-    
 
-  index = list()
-  for j in seq:
-    for index_fib, n in enumerate(fib_list):
-      if n == j:
-        index.append(index_fib)
-        break
-
-
-  if index == list(range(index[0], index[-1] + 1)):
-    print("True")
-    return 0
-  
-  print("False")
+  for i in range(0, len(seq), 2):
+    for j in range(0, len(fib_list), 2):
+      if seq[i] == fib_list[j]:
+        try:
+          if seq[i+1] != fib_list[j+1]:
+            return print("No")
+        except:
+          return print("Yes")
+  return print("No")
 
 if __name__ == "__main__":
   main()
